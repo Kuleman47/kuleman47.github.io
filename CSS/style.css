@@ -1,0 +1,27 @@
+img {
+    margin: 20px;
+    float: right;
+    max-width: 150px;
+}
+
+h1 {
+    padding-left: 15px;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    background-color: aqua;
+}
+p, h2 {
+    padding-left: 15px;
+}
+
+body {
+    padding-left: 15px;
+    align-content: center;
+    margin: 1.25rem;   
+}
+footer {
+    padding-left: 15px;
+    background-color: aqua;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
