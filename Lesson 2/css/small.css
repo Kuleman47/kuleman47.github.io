@@ -1,0 +1,33 @@
+@media only screen and (min-width: 1px){
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    main section:nth-child(3) {
+		grid-column: span 1;
+    }
+    img {
+        max-width: 150px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h1, h4 {
+        font-family: 'Fredoka One';
+    }
+    p, a {
+        font-family: 'Pacifico';
+    }
+
+    .Space {
+        background-color: cyan;
+    }
+    .Hicks {
+        background-color: yellow;
+    }
+    .Thirds {
+        background-color: coral;
+    }
+    
+    }
