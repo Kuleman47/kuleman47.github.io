@@ -1,6 +1,23 @@
 body {
-    background-color: darkblue;
+    background-color: #2D728F;
 }
 main {
-    background-color: goldenrod;
+    background-color: #F5EE9E;
+}
+nav {
+    background-color: lightgrey;
+    display: block;
+    font-size: 24px;
+    padding: 1em;
+}
+a {
+    padding: 20px;;
+}
+a:hover {
+    background-color: aqua;
+    padding: 1em;
+    margin: 1em;
+}
+img {
+    max-width: 100px;
 }
