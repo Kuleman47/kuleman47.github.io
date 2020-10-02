@@ -1,7 +1,15 @@
-@media only screen and (min-width: 53em){
+@media only screen and (min-width: 44.5em){
+ 
+    ul{
+        display: flex;
+    }
+    li {
+      
+        float: left;
+      }
 
-a{
-    display: inline;
-}
-
+      li a {
+        display: block;
+      }
+      
 }
