@@ -34,10 +34,13 @@ nav {
     font-size: 26px;
     padding: 1em;
 }
+ol {
+    list-style-type: none;
+    font-family: 'Permanent Marker';
+}
 ul{
         list-style-type: none;
-
-}
+    }
 li a {    
     display: block;
     padding: 20px;

@@ -3,12 +3,10 @@
     ul{
         display: flex;
     }
-    li {
+    li a {
       
         float: left;
-      }
-
-      li a {
+      
         display: block;
       }
       
