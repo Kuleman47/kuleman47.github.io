@@ -2,7 +2,17 @@
 body {
         background-color: #2D728F;
     }    
-header {
+.pancakes {
+    display: none;
+    background-color: navajowhite;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: cursive;
+    padding: 10px;
+
+}
+    header {
     display: flex;
         font-family: 'Bangers';
         font-size: 25px;
@@ -20,28 +30,54 @@ header {
     font-size: 22px;
 }
 
+.logo {
+    max-width: 140px;
+    float: left;
+}
+
 h2 {
         background-color: #F5EE9E; 
         padding: 20px;
         font-size: 24px;
         text-align: center;
         font-family: 'Bangers';
+}
+    .hero {  
+      margin: 10px auto;
+      max-width: 960px;
+      width: 100%;
+      height: auto;
     }
-.hero {
-    margin: 10px auto;
-    background-color: white;
-    border: 1px solid darkred;
-    width: 960px;
-    height: 300px;
+    .herodiv { 
+        display: flex;
+        position: relative;
+       
+    }
+    .weathersummary {
+        position: absolute;
+        top: 30px;
+        left: 200px;
+        background-color: #F5EE9E;
+        padding: 10px;
+        font-size: 20px;
+        border: none;
+        font-family: 'Permanent Marker';
+    }
+
+
+.fivedaycast {
+    font-family: 'Bangers';
+    background-color: #F5EE9E;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
 }
-.herodiv {
-    position: relative;
+
+
+  .article {
+
 }
-.weathersummary {
-    position: absolute;
-    top: 10px;
-    left: 200px;
-}
+
 
 footer {
     background-color: lightgrey;
@@ -52,9 +88,8 @@ footer {
 p {
     background-color: #F5EE9E;
     font-size: 18px;
-    padding: 20px;
+    padding: 10px;
     font-family: 'Permanent Marker';
-    border-style: dashed;
     margin: 1em;
 }
 
@@ -62,13 +97,18 @@ p {
     display: none;
 }
 
-
+.active{
+    background-color: white;
+}
 nav { 
     align-items: center;
     display: flex;
     font-family: 'Bangers';
     background-color: lightgrey;
     font-size: 24px;
+    justify-content: center;
+    width: 100%;
+    max-width: 200em;
 }
 
 .navigation li:first-child{
@@ -79,7 +119,7 @@ nav {
 .navigation a {
     display: block;
     text-align: center;
-    max-width: 100%;
+
 }
 
 .responsive li {
@@ -94,13 +134,11 @@ ul{
 li a {    
     text-align: center;
     display: block;
-    padding: 20px;
+    padding: 40px;
+    width: fit-content;
 }
 li a:hover {   
     background-color: darkturquoise;
 }
-img {
-    max-width: 140px;
-    float: left;
-}
+
 }

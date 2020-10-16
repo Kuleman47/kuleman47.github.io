@@ -8,16 +8,19 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
 </head>
-<body>
+<body onload="pancake()">
+    <div class="pancakes">Saturday = Preston Pancakes in the Park! <br><br> 9:00 a.m. Saturday at the city park pavilion.</div>
+
     <header> <img class="logo" src="images/iconfinder_bolt_1055110.png" alt="logo"><h1>  Whats My Weather      <p id="motto">find your weather anywhere.</p></h1>
     </header>
     <nav>  
     <ul class="navigation">
         <li><a class="menu" href="#" onclick="toggleMenu()">MENU</a></li>
         <li><a  href="#">Home </a> </li>
-        <li><a  href="#">Preston</a></li>
+        <li><a class="active" href="#">Preston</a></li>
         <li><a  href="#">Soda Springs</a></li>
         <li><a  href="#">Fish Haven</a></li>
         <li><a  href="#">Storm Center</a></li>
@@ -28,17 +31,28 @@
         <h2>Preston Idaho</h2>
         
         <div class="herodiv">
-            <div class="hero"></div>
+            <img class="hero" src="images/hero.jpg" alt="hero">
         <section class="weathersummary">
         <h3>Weather Summary</h3>
-        <p>fjs;akljfklsj</p>
-        <p>k;fjsdkfjslk;</p>
-        <p>;kfdsjk;fjsakl</p>
+        <p>Currently: Cloudy <br>
+        High: 1452 °F<br>
+        Wind Chill: 1200 °F <br> 
+        Humidity: 12%<br>
+        Wind Speed: 45 MPH</p>
         </section>
         </div>
 
-        <p>5 day forcast</p>
+        <div class="fivedaycast">
+        <h3>5 day forcast</h3>
+            
+
+        </div>
+
+        <div class="article">
         <p>article</p>
+
+    </div>
+
         <p>Contact information</p>
 
     </main>
