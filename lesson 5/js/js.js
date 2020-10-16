@@ -21,3 +21,4 @@ if (daynumber.getDay() == 5){
     document.querySelector(".pancakes").style.display = "block";
 }
 }
+
