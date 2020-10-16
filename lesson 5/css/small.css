@@ -103,7 +103,44 @@ p {
     font-family: 'Permanent Marker';
     margin: 1em;
 }
-
+.contweather {
+    font-size: 18px;
+    font-weight: bold;
+}
+.contactinfo {
+    background-color: #F5EE9E;
+    justify-content: center;
+    font-family: 'Bangers';
+    font-size: 22px;
+    padding-left: 3em;
+}
+.phone {
+    display: flex;
+    text-align: center;
+}
+.socialp {
+    display: block;
+    float: left;
+    max-width: 50px;
+    text-align: center;
+}
+.sociale {
+    display: block;
+    float: left;
+    max-width: 50px;
+    text-align: center;
+}
+.email {
+    display: flex;
+    text-align: center;
+}
+.emailp {
+    display: flex;
+    text-align: center;
+}
+.maps {
+    display: none;
+}
 .navigation li {
     display: none;
 }

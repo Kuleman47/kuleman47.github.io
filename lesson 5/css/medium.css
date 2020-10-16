@@ -23,7 +23,19 @@
             border: none;
             font-family: 'Permanent Marker';
         }
-          
+       
+        .contactinfo {
+            padding-right: 5em;
+        }
+.maps {
+    display: block;
+    position: absolute;
+    right: 10%;
+    display: flex;
+    max-width: 250px;
+    width: fit-content;    
+
+}
 .fivedaycast {
     font-size: 20px;
 }

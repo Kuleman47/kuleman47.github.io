@@ -3,6 +3,10 @@
     body{
         background-color: black;
     }
+
+.maps {
+    max-width: 275px;
+}
 .weathersummary{
     font-size: 25px;
     left: 255px;
