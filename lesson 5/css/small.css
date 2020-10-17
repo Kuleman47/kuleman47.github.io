@@ -12,27 +12,39 @@ body {
     padding: 10px;
 
 }
+ol {
+    list-style-type: none;
+}
+#headr {
+    font-family: 'Bangers';
+    font-size: 50px;
+}
     header {
-    display: flex;
+        display: flex;
         font-family: 'Bangers';
         font-size: 25px;
         text-align: center;
         align-items: center;
         justify-content: center;
         background-color: gray;
+        padding: 20px;
+        
     }
 #motto {
     font-family: 'Bangers';
-    text-align: center;
-    justify-content: center;  
+    text-align: center; 
     border: none;
     background-color: gray;
     font-size: 22px;
+    margin-top: 15px;
+    float: left;
+    
 }
 
 .logo {
+    display: flex;
     max-width: 140px;
-    float: left;
+    
 }
 
 h2 {
