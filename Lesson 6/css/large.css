@@ -1,0 +1,39 @@
+@media only screen and (min-width: 70em){
+
+.maps {
+    max-width: 275px;
+}
+.weathersummary{
+    font-size: 25px;
+    left: 255px;
+}
+.fivedaycast{
+    font-size: 25px;
+}
+figure {
+    max-width: 12%;
+    align-items: center;
+}
+    
+.day1 {
+    position: relative;
+    max-width: 200px;
+}
+.day2 {
+    position: relative;
+    max-width: 200px;
+}
+.day3 {
+    position: relative;
+    max-width: 200px;
+}
+.day4 {
+    position: relative;
+    max-width: 200px;
+}
+.day5 {
+    position: relative;
+    max-width: 200px;
+}
+
+}
