@@ -36,6 +36,18 @@
     width: fit-content;    
 
 }
+#WC {
+    font-size: 18px;
+    position: absolute;
+    left: 150px;
+    top: 187px;
+}
+#degree {
+    font-size: 18px;
+    position: absolute;
+    left: 195px;
+    top: 187px;
+}
 .fivedaycast {
     font-size: 20px;
 }

@@ -12,6 +12,26 @@ body {
     padding: 10px;
 
 }
+#t {
+    max-width: 50px;
+    background-color: #F5EE9E;
+}
+#s {
+    max-width: 50px;
+    background-color: #F5EE9E;
+}
+#WC {
+    font-size: 18px;
+    position: absolute;
+    left: 138px;
+    top: 155px;
+}
+#degree {
+    font-size: 18px;
+    position: absolute;
+    left: 185px;
+    top: 155px;
+}
 ol {
     list-style-type: none;
 }

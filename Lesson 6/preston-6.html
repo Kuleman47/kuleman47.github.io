@@ -37,14 +37,16 @@
         <h2>Preston Idaho</h2>
         
         <div class="herodiv">
-            <img class="hero" src="images/hero.jpg" alt="hero">
+            <img  class="hero" src="images/wdd230_image_franklinOriginal.jpeg" alt="hero" >
         <section class="weathersummary">
         <h3>Weather Summary</h3>
         <p>Currently: Cloudy <br>
-        High: 1452 °F<br>
-        Wind Chill: 1200 °F <br> 
-        Humidity: 12%<br>
-        Wind Speed: 45 MPH</p>
+            Humidity: 12% <br>
+        Temperature: <input type="number" id="t">°F<br>
+       Wind Speed: <input type="number" id="s">MPH<br>
+       Wind Chill: <div id="WC"></div><script src="js/windchill.js"></script> <div id="degree">°F</div>
+        <button type="button" onclick="getwindchill()">get Wind Chill</button>
+        </p>
         </section>
         </div>
 
@@ -123,6 +125,7 @@
        <br>Todays Date: <span id="currentdate"></span>
         <br> last modified
        <span id="lastModified"></span>
+       <script>document.getElementById("windchill").innerHTML = 35.74 + (0.6215 * 43) - 35.75 * 15 ** 0.16 + 0.4275 * 43 * 15 ** 0.16;</script>
     <script src="js/js.js"></script>
 </footer>
 </body>
