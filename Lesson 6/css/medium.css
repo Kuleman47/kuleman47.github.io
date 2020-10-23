@@ -12,7 +12,9 @@
             float: left;
             display: block;
           }
-
+.herodiv {
+    height: auto;
+}
           .weathersummary {
             position: absolute;
             top: 30px;

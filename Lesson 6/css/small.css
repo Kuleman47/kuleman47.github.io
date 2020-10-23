@@ -82,6 +82,7 @@ h2 {
     .herodiv { 
         display: flex;
         position: relative;
+        height: 400px;
        
     }
     .weathersummary {
