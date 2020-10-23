@@ -1,6 +1,6 @@
 function getwindchill() {
-var t = parseInt(document.getElementById("t").value);
-var s = parseInt(document.getElementById("s").value);
+var t = document.getElementById("t").innerText;
+var s = document.getElementById("s").nodeValue;
 var f = Windchill(t, s);
 
 document.getElementById("WC").innerHTML = f;
