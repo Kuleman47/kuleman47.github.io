@@ -76,8 +76,7 @@ h2 {
 }
     .hero {  
       margin: 10px auto;
-      max-width: 960px;
-      width: 100%;
+      max-width: 1100px;
       height: auto;
     }
     .herodiv { 
@@ -90,7 +89,6 @@ h2 {
         top: 10px;
         left: 100px;
         font-size: 14px;
-        
         border: none;
         font-family: 'Permanent Marker';
     }
