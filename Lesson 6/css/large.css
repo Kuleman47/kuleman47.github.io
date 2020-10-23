@@ -3,6 +3,10 @@
 .maps {
     max-width: 275px;
 }
+.hero{
+    margin-left: 40px;
+    display: flex;
+}
 .weathersummary{
     font-size: 25px;
     left: 255px;

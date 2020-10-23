@@ -15,6 +15,9 @@
 .herodiv {
     height: auto;
 }
+.hero {
+    display: flex;
+}
           .weathersummary {
             position: absolute;
             top: 30px;

@@ -37,16 +37,13 @@
         <h2>Preston Idaho</h2>
         
         <div class="herodiv">
-        
-            <figure>
-            <img class="hero" src="images/rsz_2wdd230_image_franklinoriginal_large.jpg" sizes="100vw" alt="hero"
-            srcset="images/rsz_wdd230_image_franklinoriginal_500.jpg 500w,
-            images/rsz_rsz_2wdd230_image_franklinoriginal_800.jpg 800w, 
-            images/rsz_1wdd230_image_franklinoriginal_1000.jpg 1000w">
-            
-        
-        </figure>
 
+        <picture class="hero">
+            <source media="(max-width: 800px)" srcset="images/rsz_wdd230_image_franklinoriginal_500.jpg">
+                <source media="(max-width: 1000px)" srcset="images/rsz_rsz_2wdd230_image_franklinoriginal_800.jpg">
+                <source media="(max-width: 1300px)" srcset="images/rsz_1wdd230_image_franklinoriginal_1000.jpg">       
+                   <img src="images/rsz_1wdd230_image_franklinoriginal_1000.jpg" alt="jfkdsla;"> 
+                </picture>
 
 
         <section class="weathersummary">
@@ -56,7 +53,7 @@
         Temperature: <input type="number" id="t">°F<br>
        Wind Speed: <input type="number" id="s">MPH<br>
        Wind Chill: <div id="WC"></div><script src="js/windchill.js"></script> <div id="degree">°F</div>
-        <button type="button" onclick="getwindchill()">get Wind Chill</button>
+        <span onclick="getwindchill()">
         </p>
         </section>
         </div>
