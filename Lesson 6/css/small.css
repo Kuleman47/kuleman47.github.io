@@ -22,15 +22,10 @@ body {
 }
 #WC {
     font-size: 18px;
-    position: absolute;
-    left: 138px;
-    top: 155px;
 }
 #degree {
     font-size: 18px;
-    position: absolute;
-    left: 185px;
-    top: 155px;
+
 }
 ol {
     list-style-type: none;

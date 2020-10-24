@@ -15,7 +15,7 @@
 <body onload="pancake()">
     <div class="pancakes">Saturday = Preston Pancakes in the Park! <br><br> 9:00 a.m. Saturday at the city park pavilion.</div>
 
-    <header>   <img class="logo" src="images/iconfinder_bolt_1055110.png" alt="logo"> 
+    <header onload="getwindchill()">   <img class="logo" src="images/iconfinder_bolt_1055110.png" alt="logo"> 
         <ol>
             <li id="headr"> Whats My Weather </li> 
             <li id="motto">Find your Weather Anywhere </li>
@@ -40,8 +40,8 @@
 
         <picture class="hero">
             <source media="(max-width: 800px)" srcset="images/rsz_wdd230_image_franklinoriginal_500.jpg">
-                <source media="(max-width: 1000px)" srcset="images/rsz_rsz_2wdd230_image_franklinoriginal_800.jpg">
-                <source media="(max-width: 1300px)" srcset="images/rsz_1wdd230_image_franklinoriginal_1000.jpg">       
+                <source media="(max-width: 1200px)" srcset="images/rsz_rsz_2wdd230_image_franklinoriginal_800.jpg">
+                <source media="(max-width: 4000px)" srcset="images/rsz_1wdd230_image_franklinoriginal_1000.jpg">       
                    <img src="images/rsz_1wdd230_image_franklinoriginal_1000.jpg" alt="jfkdsla;"> 
                 </picture>
 
@@ -50,11 +50,10 @@
         <h3>Weather Summary</h3>
         <p>Currently: Cloudy <br>
             Humidity: 12% <br>
-        Temperature: 14°F<br>
-       Wind Speed: 12MPH<br>
-       Wind Chill: <span id="WC" onclick="getwindchill()"></span> <script src="js/windchill.js"></script> <div id="degree">°F</div>
-        
-        </p>
+        Temperature: <span id="t">21</span>°F<br>
+       Wind Speed:<span id="s">5</span> MPH<br>
+       <span id="WC"></span> <span id="degree">°F</span>
+       </p>
         </section>
         </div>
 
@@ -127,14 +126,19 @@
  
         </div>
     </main>
-    <br><br>
+    <br>
+    <br>
     <footer>
         &#169;<span id="copyright-year"></span> / Taylor Christensen / North Carolina / <a href="https://www.byui.edu/online">BYU Idaho</a>
        <br>Todays Date: <span id="currentdate"></span>
         <br> last modified
        <span id="lastModified"></span>
-       <script>document.getElementById("windchill").innerHTML = 35.74 + (0.6215 * 43) - 35.75 * 15 ** 0.16 + 0.4275 * 43 * 15 ** 0.16;</script>
     <script src="js/js.js"></script>
+    <script src="js/windchill.js" onload="getwindchill()"></script>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+    WebFont.load({google: {families: ['Permanent Marker', 'Bangers']}});
+</script>
 </body>
 </html>

@@ -4,7 +4,10 @@
     max-width: 275px;
 }
 .hero{
-    margin-left: 40px;
+    display: block;
+    margin: 0 auto;
+    max-width: 1500px;
+    height: auto;
     display: flex;
 }
 .weathersummary{
@@ -20,15 +23,11 @@ figure {
 }
 #WC {
     font-size: 18px;
-    position: absolute;
-    left: 145px;
-    top: 205px;
+
 }
 #degree {
     font-size: 18px;
-    position: absolute;
-    left: 195px;
-    top: 205px;
+ 
 }
     
 .day1 {

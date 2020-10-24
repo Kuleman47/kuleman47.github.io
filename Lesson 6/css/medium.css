@@ -16,6 +16,9 @@
     height: auto;
 }
 .hero {
+    margin: 0 auto;
+    max-width: 800px;
+    height: auto;
     display: flex;
 }
           .weathersummary {
@@ -43,15 +46,11 @@
 }
 #WC {
     font-size: 18px;
-    position: absolute;
-    left: 150px;
-    top: 187px;
+
 }
 #degree {
     font-size: 18px;
-    position: absolute;
-    left: 195px;
-    top: 187px;
+
 }
 .fivedaycast {
     font-size: 20px;
