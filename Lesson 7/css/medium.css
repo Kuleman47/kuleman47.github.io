@@ -1,0 +1,86 @@
+@media only screen and (min-width: 50em){
+    .navigation li:first-child{
+            display: none;
+        }
+        .navigation li{
+            display: inline;
+        }
+        ul{
+            display: flex;
+        }
+        li a {
+            float: left;
+            display: block;
+          }
+.herodiv {
+    height: auto;
+}
+.hero {
+    margin: 0 auto;
+    max-width: 800px;
+    height: auto;
+    display: flex;
+}
+          .weathersummary {
+            position: absolute;
+            top: 30px;
+            left: 170px;
+            background-color: #F5EE9E;
+            padding: 10px;
+            font-size: 20px;
+            border: none;
+            font-family: 'Permanent Marker';
+        }
+       
+        .contactinfo {
+            padding-right: 5em;
+        }
+.maps {
+    display: block;
+    position: absolute;
+    right: 10%;
+    display: flex;
+    max-width: 250px;
+    width: fit-content;    
+
+}
+#WC {
+    font-size: 18px;
+
+}
+#degree {
+    font-size: 18px;
+
+}
+.fivedaycast {
+    font-size: 20px;
+}
+.bus {
+    float: right
+}
+figure {
+    max-width: 7%;
+}
+
+.day1 {
+    position: relative;
+    max-width: 125px;
+}
+.day2 {
+    position: relative;
+    max-width: 125px;
+}
+.day3 {
+    position: relative;
+    max-width: 125px;
+}
+.day4 {
+    position: relative;
+    max-width: 125px;
+}
+.day5 {
+    position: relative;
+    max-width: 125px;
+}
+        
+}

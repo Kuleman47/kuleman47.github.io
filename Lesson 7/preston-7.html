@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whats My Weather</title>
+    <meta name="description" content="A website about weather">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body onload="pancake()">
+    <div class="pancakes">Saturday = Preston Pancakes in the Park! <br><br> 9:00 a.m. Saturday at the city park pavilion.</div>
+
+    <header onload="getwindchill()">   <img class="logo" src="images/iconfinder_bolt_1055110.png" alt="logo"> 
+        <ol>
+            <li id="headr"> Whats My Weather </li> 
+            <li id="motto">Find your Weather Anywhere </li>
+      </ol>
+     
+    </header>
+    <nav>  
+    <ul class="navigation">
+        <li><a class="menu" href="#" onclick="toggleMenu()">MENU</a></li>
+        <li><a  href="#">Home </a> </li>
+        <li><a class="active" href="#">Preston</a></li>
+        <li><a  href="#">Soda Springs</a></li>
+        <li><a  href="#">Fish Haven</a></li>
+        <li><a  href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+    </ul>  
+</nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        
+        <div class="herodiv">
+
+        <picture class="hero">
+            <source media="(max-width: 800px)" srcset="images/rsz_wdd230_image_franklinoriginal_500.jpg">
+                <source media="(max-width: 1200px)" srcset="images/rsz_rsz_2wdd230_image_franklinoriginal_800.jpg">
+                <source media="(max-width: 4000px)" srcset="images/rsz_1wdd230_image_franklinoriginal_1000.jpg">       
+                   <img src="images/rsz_1wdd230_image_franklinoriginal_1000.jpg" alt="jfkdsla;"> 
+                </picture>
+
+
+        <section class="weathersummary">
+        <h3>Weather Summary</h3>
+        <p>Currently: Cloudy <br>
+            Humidity: 12% <br>
+        Temperature: <span id="t">21</span>°F<br>
+       Wind Speed:<span id="s">5</span> MPH<br>
+       <span id="WC"></span> <span id="degree">°F</span>
+       </p>
+        </section>
+        </div>
+
+        <div class="fivedaycast">
+        <h3>5 day forcast</h3>
+    <figure>
+       <img class="day1" src="images/20201016_120427.jpg" alt="day1">          
+       <figcaption>Monday</figcaption>      
+    </figure>
+    <figure>     
+       <img class="day2" src="images/20201016_120427.jpg" alt="day2">
+       <figcaption>Tuesday</figcaption>
+</figure>
+<figure>
+    <img class="day3" src="images/20201016_120427.jpg" alt="day3">
+       <figcaption>Wednesday</figcaption>
+</figure>
+<figure>
+       <img class="day4" src="images/20201016_120427.jpg" alt="day4">
+       <figcaption>Thursday</figcaption>
+</figure>       
+<figure>
+       <img class="day5" src="images/20201016_120427.jpg" alt="day5">    
+       <figcaption>Friday</figcaption> 
+    </figure>
+        </div>
+
+        <div class="article">
+        <h3 class="articleheading">Preston School District implement new standards to preserve in-class instruction despite rising numbers of COVID-19</h3>
+            <img class="bus" src="images/20201001_104155.jpg" alt="emptybus">
+        <p id="author">By NECIA P. SEAMONS Citizen editor</p>
+
+        <p>In an effort to maintain in-class instruction in spite of the increased 
+            numbers of COVID-19 that have been confirmed in Franklin County, the Preston School District
+             has adopted new, temporary regulations, said superintendent Marc Gee. 
+            The following adjustments have been made following input from county commissioners, Franklin 
+            County Medical Center, Southeast Idaho Public Health, and parents.</p>
+
+            
+            <p>1- Masks required for students at 
+            PHS, FCHS, and PJH at all times unless 
+            eating or as instructed by a teacher or administrator. Teachers and administrators may make allowances for 
+            students in their environments to remove their masks if social distancing of 6 feet can be maintained. 
+            (exceptions only for medical conditions presented by parents, approved by admin) Parents should plan to 
+            supply the masks for their students. If that is not possible, cloth or disposable masks can be provided.</p>
+
+            <a href="https://www.hjnews.com/preston/preston-school-district-implement-new-standards-to-preserve-in-class-instruction-despite-rising-numbers-of/article_45edaf23-78f9-59d6-afdb-894df28ce3eb.html">Continue to Full Article</a>
+    </div>
+
+    <div class="contactinfo">
+
+
+        <h3>Contact information</h3>
+          <img class="maps" src="images/Screenshot_20201016-174704_Maps.jpg" alt="map">
+        <p class="contweather">Whats My Weather</p>
+        
+
+        <p>30 S. 1st W. <br> Preston, ID 83263</p> 
+
+      
+        <div class="phone">
+        <p><img class="socialp" src="images/phone.png" alt="phone">
+        Phone: (123) 456-7858</p>
+        </div>
+
+        <div class="email">
+        <p class="emailp"> 
+            <img class="sociale" src="images/email.png" alt="email">Email: whatsmyweather@gmail.com</p>
+        </div>
+ 
+        </div>
+    </main>
+    <br>
+    <br>
+    <footer>
+        &#169;<span id="copyright-year"></span> / Taylor Christensen / North Carolina / <a href="https://www.byui.edu/online">BYU Idaho</a>
+       <br>Todays Date: <span id="currentdate"></span>
+        <br> last modified
+       <span id="lastModified"></span>
+    <script src="js/js.js"></script>
+    <script src="js/windchill.js" onload="getwindchill()"></script>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+    WebFont.load({google: {families: ['Permanent Marker', 'Bangers']}});
+</script>
+</body>
+</html>
