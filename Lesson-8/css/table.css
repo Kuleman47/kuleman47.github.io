@@ -1,0 +1,34 @@
+table {
+    font-family: 'Ubuntum', sans-serif;
+}
+caption {
+    display: table-caption;
+    background-color: #7fb9c2;
+    font-size: 22px;
+    font-family: 'Ubuntum', sans-serif;
+    font-weight: bold;
+}
+thead {
+    background-color: #628ca6;
+    color: white;
+}
+tbody {
+    background-color: #e7ffed;
+    border: 1px black;
+}
+#blue {
+    background-color: #628ca6;
+    color: white;
+}
+td:nth-child(2){
+        text-align: center;
+    }
+
+    td:nth-child(3){
+        text-align: center;
+    }
+tfoot{
+    background-color: #7fb9c2;
+    font-size: 14px;
+    text-align: center;
+}
