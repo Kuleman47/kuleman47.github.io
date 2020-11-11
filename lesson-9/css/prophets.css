@@ -1,0 +1,92 @@
+@media only screen and (min-width: 2px) {
+  body {
+      text-align: center;
+      font-family: 'Xanh Mono';
+
+  }
+    div {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        background-color: whitesmoke;
+    padding-left: 20px;
+}
+section {
+    background-color: violet;
+    color: blue;
+}
+img {
+    max-width: 250px;
+    border: solid white;
+}
+header {
+     color: black;
+}
+p {
+    color: black;
+}
+}
+
+@media only screen and (min-width: 48em){
+body {
+    text-align: center;
+    color: blue;
+}
+div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    background-color: whitesmoke;
+    padding-left: 20px;
+}
+section {
+    background-color: violet;
+    color: blue;
+}
+img {
+    max-width: 250px;
+    border: solid white;
+}
+header {
+    font-size: 24px;
+    color: black;
+}
+p {
+    color: black;
+}
+}
+
+
+@media only screen and (min-width: 75em){
+    body {
+        text-align: center;
+        color: blue;
+        margin-left: -10px;
+        font-family: 'Xanh Mono';
+
+    }
+    div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        background-color: whitesmoke;
+        padding-left: 20px;
+    }
+    section {
+        background-color: violet;
+        color: blue;
+    }
+    img {
+        max-width: 250px;
+        border: solid white;
+    }
+    header {
+        font-size: 36px;
+        color: black;
+    }
+    p {
+        font-family: 'Xanh Mono';
+
+        color: black;
+    }
+}
