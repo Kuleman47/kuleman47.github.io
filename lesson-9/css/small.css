@@ -133,8 +133,23 @@ h2 {
 .bus {
     max-width: 250px;   
     padding: 1em;
-
 }
+
+div {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    text-align: center;
+}
+section img {
+    max-width: 80%;
+    background-color: #2D728F;
+}
+section {
+    background-color: #F5EE9E;
+}
+
 figcaption {
     display: inline-block;
     text-align: center;
