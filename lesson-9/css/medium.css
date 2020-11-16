@@ -31,7 +31,7 @@
             border: none;
             font-family: 'Permanent Marker';
         }
-        div {
+        .cards {
         display: grid;
         grid-template-columns: 1fr;
         padding: 20px;

@@ -135,7 +135,7 @@ h2 {
     padding: 1em;
 }
 
-div {
+.cards {
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr;
