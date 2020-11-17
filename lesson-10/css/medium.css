@@ -115,10 +115,10 @@
 .maps {
     display: block;
     position: absolute;
-    right: 10%;
+    right: 8%;
     display: flex;
-    max-width: 250px;
-    width: fit-content;    
+    max-width: 200px;
+    width: 250px;    
 
 }
 .main {
@@ -140,6 +140,7 @@
 }
 .fivedaycast {
     font-size: 20px;
+    margin: 50px;
 }
 .bus {
     float: right
@@ -150,22 +151,22 @@ figure {
 
 .day1 {
     position: relative;
-    max-width: 125px;
+    max-width: 115px;
 }
 .day2 {
     position: relative;
-    max-width: 125px;
+    max-width: 115px;
 }
 .day3 {
     position: relative;
-    max-width: 125px;
+    max-width: 115px;
 }
 .day4 {
     position: relative;
-    max-width: 125px;
+    max-width: 115px;
 }
 .day5 {
     position: relative;
-    max-width: 125px;
+    max-width: 115px;
 }       
 }

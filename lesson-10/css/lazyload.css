@@ -1,0 +1,12 @@
+img {
+    max-width: 300px;
+    filter: blur(0px);
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+img[data-src] {
+    border-top: dashed;
+    filter: blur(8px);
+}

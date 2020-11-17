@@ -1,0 +1,123 @@
+@media only screen and (min-width: 70em){
+
+.maps {
+    max-width: 275px;
+}
+.hero{
+    display: block;
+    margin: 0 auto;
+    max-width: 1500px;
+    height: auto;
+    display: flex;
+}
+.weathersummary{
+    font-size: 25px;
+    left: 255px;
+}
+.cards {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+section img {
+    max-width: 444px;
+    padding: 0px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 12px;
+    padding: 0px;
+  }
+  
+  section:nth-child(odd) img {
+      grid-column: 1;
+      grid-row: 6;
+      max-width: 100%;
+      padding: 0px;
+      padding-top: 0px;
+      background-color: #F5EE9E;
+  }
+  
+  section:nth-child(odd) p h2 {
+      grid-column: 1;
+      grid-row: 1/5;
+  }
+
+  section:nth-child(even) p h2 {
+      grid-row: 1/5;
+      padding: 20px;
+  }
+  section:nth-child(even) img {
+      grid-row: 6;
+      max-width: 100%;
+      padding: 0px;
+      padding-left: 0px;
+      margin-left: 0;
+      padding-top: 0px;
+      background-color: #F5EE9E;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+.fivedaycast{
+    font-size: 25px;
+}
+figure {
+    max-width: 12%;
+    align-items: center;
+}
+#WC {
+    font-size: 18px;
+
+}
+#degree {
+    font-size: 18px;
+ 
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.gallery:hover {
+    box-shadow: 0 0 75px white;
+}
+.day1 {
+    position: relative;
+    max-width: 150px;
+}
+.day2 {
+    position: relative;
+    max-width: 150px;
+}
+.day3 {
+    position: relative;
+    max-width: 150px;
+}
+.day4 {
+    position: relative;
+    max-width: 150px;
+}
+.day5 {
+    position: relative;
+    max-width: 150px;
+}
+
+
+}
