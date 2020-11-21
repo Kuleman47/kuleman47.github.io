@@ -39,46 +39,27 @@
         <div class="herodiv">
 
         <picture class="hero">
-            <source media="(max-width: 800px)" srcset="images/rsz_wdd230_image_franklinoriginal_500.jpg">
-                <source media="(max-width: 1200px)" srcset="images/rsz_rsz_2wdd230_image_franklinoriginal_800.jpg">
-                <source media="(max-width: 4000px)" srcset="images/rsz_1wdd230_image_franklinoriginal_1000.jpg">       
-                   <img src="images/rsz_1wdd230_image_franklinoriginal_1000.jpg" alt="jfkdsla;"> 
+            <source media="(max-width: 800px)" srcset="images/hero_small.jpg">
+                <source media="(max-width: 1200px)" srcset="images/hero_medium.jpg">
+                <source media="(max-width: 4000px)" srcset="images/hero_large.jpg">       
+                   <img src="images/hero_large.jpg" alt="large hero"> 
                 </picture>
 
 
         <section class="weathersummary">
         <h3>Weather Summary</h3>
-        <p>Currently: Cloudy <br>
-            Humidity: 12% <br>
-        Temperature: <span id="t">21</span>°F<br>
-       Wind Speed:<span id="s">5</span> MPH<br>
+        <p>Currently: <span id="currently"></span> <br>
+            Humidity: <span id="h"></span> % <br>
+        Temperature: <span id="t"></span>°F<br>
+       Wind Speed:<span id="s"></span> MPH<br>
        <span id="WC"></span> <span id="degree">°F</span>
        </p>
         </section>
         </div>
 
-        <div class="fivedaycast">
-        <h3>5 day forcast</h3>
-    <figure>
-       <img class="day1" src="images/20201016_120427.jpg" alt="day1">          
-       <figcaption>Mon</figcaption>      
-    </figure>
-    <figure>     
-       <img class="day2" src="images/20201016_120427.jpg" alt="day2">
-       <figcaption>Tues</figcaption>
-</figure>
-<figure>
-    <img class="day3" src="images/20201016_120427.jpg" alt="day3">
-       <figcaption>Wed</figcaption>
-</figure>
-<figure>
-       <img class="day4" src="images/20201016_120427.jpg" alt="day4">
-       <figcaption>Thurs</figcaption>
-</figure>       
-<figure>
-       <img class="day5" src="images/20201016_120427.jpg" alt="day5">    
-       <figcaption>Fri</figcaption> 
-    </figure>
+        <div>
+            <h2>Five Day Forecast</h2>
+            <table class="fivedaycast"></table>
         </div>
 
         <div class="article">
@@ -133,12 +114,13 @@
        <br>Todays Date: <span id="currentdate"></span>
         <br> last modified
        <span id="lastModified"></span>
-    <script src="js/js.js"></script>
-    <script src="js/windchill.js" onload="getwindchill()"></script>
+    <script src="js/js.js"></script>    
+   
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 <script>
     WebFont.load({google: {families: ['Permanent Marker', 'Bangers']}});
 </script>
+ <script src="js/windchill.js" onload="getwindchill()"></script>
 </body>
 </html>

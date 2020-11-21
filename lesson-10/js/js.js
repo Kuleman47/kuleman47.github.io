@@ -1,3 +1,58 @@
+const prestonURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=83f34cca04973e1329ea402e3d5dda64"
+
+fetch(prestonURL)
+  .then((response) => response.json())
+  .then((jsObject) => {
+      console.log(jsObject);
+    document.getElementById('t').textContent = jsObject.main.temp;
+    document.getElementById('h').textContent = jsObject.main.humidity;
+    document.getElementById('s').textContent = jsObject.wind.speed;
+    document.getElementById('currently').textContent = jsObject.weather[0].description;
+
+    const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
+const desc = jsObject.weather[0].description;  // note how we reference the weather array
+document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
+document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
+document.getElementById('icon').setAttribute('alt', desc);
+  });
+
+
+
+const apiURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=83f34cca04973e1329ea402e3d5dda64"
+
+fetch(apiURL)
+.then(response => response.json())
+.then((jsobject) => {
+    console.log(jsobject);
+    const forecast = jsobject.list.filter(y => y.dt_txt.includes('18:00:00'));
+    console.log(forecast);
+
+  const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    for (let i = 0; i < forecast.length; i++ ) {
+        
+    const date = new Date(forecast[i].dt_txt);
+    let card = document.createElement('table');
+    let days = document.createElement('h3');
+    let imagine = document.createElement('img');    
+    let temps = document.createElement('h3');
+
+
+
+    days.textContent = weekdays[date.getDay()];
+    imagine.setAttribute('src', 'https://openweathermap.org/img/w/' + forecast[i].weather[0].icon + '.png');
+    imagine.setAttribute('alt', forecast[i].weather[0].description);
+    temps.textContent = forecast[i].main.temp;
+
+    card.appendChild(days);
+    card.appendChild(imagine);
+    card.appendChild(temps);
+ 
+    document.querySelector('table.fivedaycast').appendChild(card);
+    }
+});
+
+
+
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json'
 
 fetch(requestURL)

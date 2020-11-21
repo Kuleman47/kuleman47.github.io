@@ -14,6 +14,7 @@
     font-size: 25px;
     left: 255px;
 }
+
 .cards {
     padding: 20px;
     display: grid;
@@ -60,24 +61,18 @@ section {
       background-color: #F5EE9E;
   }
 
+  section:first-child {
+      order: 3;
+  }
 
+  section:nth-child(2) {
+      order: 1;
+  }
 
+  section:nth-child(3) {
+      order: 1;
+  }
 
-
-
-
-
-
-
-
-
-.fivedaycast{
-    font-size: 25px;
-}
-figure {
-    max-width: 12%;
-    align-items: center;
-}
 #WC {
     font-size: 18px;
 
@@ -98,26 +93,4 @@ figure {
 .gallery:hover {
     box-shadow: 0 0 75px white;
 }
-.day1 {
-    position: relative;
-    max-width: 150px;
-}
-.day2 {
-    position: relative;
-    max-width: 150px;
-}
-.day3 {
-    position: relative;
-    max-width: 150px;
-}
-.day4 {
-    position: relative;
-    max-width: 150px;
-}
-.day5 {
-    position: relative;
-    max-width: 150px;
-}
-
-
 }
