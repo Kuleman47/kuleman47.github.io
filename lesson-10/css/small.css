@@ -201,6 +201,7 @@ p {
     font-family: 'Bangers';
     font-size: 22px;
     padding-left: 3em;
+    margin: 50px;
 }
 .phone {
     display: flex;
