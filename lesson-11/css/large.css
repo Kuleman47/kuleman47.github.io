@@ -72,11 +72,6 @@ section {
   section:nth-child(3) {
       order: 1;
   }
-
-#WC {
-    font-size: 18px;
-
-}
 #degree {
     font-size: 18px;
  

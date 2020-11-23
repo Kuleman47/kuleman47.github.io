@@ -129,11 +129,6 @@
     margin-top: 20px;
 }
 
-
-#WC {
-    font-size: 18px;
-
-}
 #degree {
     font-size: 18px;
 
@@ -142,8 +137,23 @@
     font-size: 20px;
     margin: 50px;
 }
+
+.sodafivedaycast {
+    font-size: 20px;
+    margin: 50px;
+}
+
+.fishfivedaycast {
+    font-size: 20px;
+    margin: 50px;
+}
 .bus {
-    float: right
+    float: right;
+}
+.buss {
+    float: right;
+    padding: 15px;
+    max-width: 350px;
 }
 figure {
     max-width: 7%;

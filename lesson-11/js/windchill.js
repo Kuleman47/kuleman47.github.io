@@ -12,9 +12,9 @@ function getwindchill() {
     var f = Math.round(10 * b) / 10;
     var na = "N/A"
     if (t <= 50 && s >= 3) {
-        document.getElementById("WC").innerHTML = "Wind Chill: " + f
+        document.getElementsByClassName("WC").innerHTML = "Wind Chill: " + f
     }
     else {
-        document.getElementById("WC").innerHTML = "Wind Chill: " + na;
+        document.getElementsByClassName("WC").innerHTML = "Wind Chill: " + na;
     }
     }
