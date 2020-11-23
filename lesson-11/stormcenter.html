@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whats My Weather</title>
+    <meta name="description" content="A website about weather">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body onload="pancake()">
+    <div class="pancakes">Saturday = Preston Pancakes in the Park! <br><br> 9:00 a.m. Saturday at the city park pavilion.</div>
+
+    <header onload="getwindchill()">   <img class="logo" src="images/iconfinder_bolt_1055110.png" alt="logo"> 
+        <ol>
+            <li id="headr"> Whats My Weather </li> 
+            <li id="motto">Find your Weather Anywhere </li>
+      </ol>
+     
+    </header>
+    <nav>  
+    <ul class="navigation">
+        <li><a class="menu" href="#" onclick="toggleMenu()">MENU</a></li>
+        <li><a  href="index.html">Home </a> </li>
+        <li><a  href="preston.html">Preston</a></li>
+        <li><a  href="#">Soda Springs</a></li>
+        <li><a  href="#">Fish Haven</a></li>
+        <li><a class="active" href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+    </ul>  
+</nav>
+    <main>
+        <form action="thanks.html" method="get">
+            <label>Name:<br>
+            <input type="text" name="fullname" required  pattern="[A-Za-z].{4,}">
+        </label><br>
+
+            <label>Email:<br>
+            <input type="text" name="email" placeholder="example@gmail.com" required>
+        </label><br>
+
+            <label>Phone:<br>
+            <input type="tel" name="phone" required pattern="[0-9]{10}">
+        </label><br>
+
+            <label>Storm Date:<br>
+            <input type="date">
+        </label><br>
+            
+            <label>Storm Type:<br>
+
+            <input list="stormtype" name="stormtype">
+            <datalist id="stormtype">
+              <option value="Flash Flood">
+              <option value="Hail">
+              <option value="Hurricane">
+              <option value="Thunderstorm">
+              <option value="Tornado">
+            </datalist>
+        </label><br>
+
+            <label>Storm Severity:<br>
+            <input id="stormseverity"  type="range" min="1" max="10" name="Stormseverity"><br>
+        </label><br>
+
+            <label>Storm Region:<br>
+            <select name="stormregion">
+                <option value="value" selected disabled>Select Region </option >
+                <option value="preston">Preston</option>
+                <option value="sodaspring">Soda Springs</option>
+                <option value="fishhaven">Fish Haven</option>
+        </select><br>
+    </label><br>
+        <label>Were you in danger?<br>
+        <input type="radio" name="danger" id="yes" value="yes">
+    </label>
+        <label for="yes">YES</label>
+
+    
+        <input type="radio" name="danger" id="no" value="no">
+        <label for="no">NO</label>
+
+        <input type="radio" name="danger" id="maybe" value="maybe">
+        <label for="maybe">MAYBE</label><br>
+    
+        <br><label>Comments<br>
+    <textarea rows="3" cols="19"></textarea>
+</label><br><br>
+        <button type="submit" name="submit">Send It</button>    
+    </form>
+    </main>
+    <footer>
+        &#169;<span id="copyright-year"></span> / Taylor Christensen / North Carolina / <a href="https://www.byui.edu/online">BYU Idaho</a>
+       <br>Todays Date: <span id="currentdate"></span>
+        <br> last modified
+       <span id="lastModified"></span>
+    <script src="js/js.js"></script>
+    <script src="js/windchill.js" onload="getwindchill()"></script>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+    WebFont.load({google: {families: ['Permanent Marker', 'Bangers']}});
+</script>
+<script src="js/lazyload.js"></script>
+</body>
+</html>
