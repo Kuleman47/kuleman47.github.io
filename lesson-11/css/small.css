@@ -80,10 +80,11 @@ ol {
     max-width: 80px;
     
 }
+img {
+    filter: blur(0px);
+}
 img[data-src] {
-    filter: blur(6px);
-    max-width: 250px;
-    max-height: 250px;
+    filter: blur(8px);
 }
 h2 {
         background-color: #F5EE9E; 
