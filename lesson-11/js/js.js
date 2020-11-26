@@ -54,8 +54,6 @@ document.getElementById('icon').setAttribute('alt', desc);
 
   });
 
-
-
 const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=83f34cca04973e1329ea402e3d5dda64"
 const sodaspringsapiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&appid=83f34cca04973e1329ea402e3d5dda64"
 const fishhavenapiURL = "https://api.openweathermap.org/data/2.5/forecast?lat=42.0380399&lon=-111.4048681&units=imperial&appid=83f34cca04973e1329ea402e3d5dda64"
@@ -165,8 +163,8 @@ fetch(requestURL)
 
     for (let i = 0; i < towns.length; i++) {
 
-  //  const townname = towns.filter(x => (x.name == "Preston, Soda Springs, Fish Haven"));
   if (towns[i].name == 'Preston' || towns[i].name == 'Soda Springs' || towns[i].name == 'Fish Haven'){
+
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
     let image = document.createElement('img');
@@ -195,6 +193,83 @@ fetch(requestURL)
   }
 }
 });
+
+fetch(requestURL)
+.then(function (response) {
+    return response.json();
+})
+.then(function (jsonObject) {
+    
+    const towns = jsonObject['towns'];
+
+
+    for (let i = 0; i < towns.length; i++) {
+
+  if (towns[i].name == "Preston") {
+   let tavo = document.createElement('div');
+   let pp = document.createElement('p');
+
+   pp.textContent = towns[i].events;
+
+   tavo.appendChild(pp);
+
+   document.querySelector('div.prestonevents').appendChild(tavo);
+  }
+    }
+  });
+
+  fetch(requestURL)
+  .then(function (response) {
+      return response.json();
+  })
+  .then(function (jsonObject) {
+      
+      const towns = jsonObject['towns'];
+  
+  
+      for (let i = 0; i < towns.length; i++) {
+
+  if (towns[i].name == "Fish Haven") {
+    let event = document.createElement('div');
+    let fhp = document.createElement('p');
+ 
+    fhp.textContent = towns[i].events;
+ 
+    event.appendChild(fhp);
+ 
+    document.querySelector('div.events').appendChild(event);
+   } 
+
+} 
+});
+
+fetch(requestURL)
+.then(function (response) {
+    return response.json();
+})
+.then(function (jsonObject) {
+    
+    const towns = jsonObject['towns'];
+
+
+    for (let i = 0; i < towns.length; i++) {
+
+if (towns[i].name == "Soda Springs") {
+  let events = document.createElement('div');
+  let ssp = document.createElement('p');
+
+  ssp.textContent = towns[i].events;
+
+  events.appendChild(ssp);
+
+  document.querySelector('div.sodaevent').appendChild(events);
+ } 
+
+} 
+});
+
+
+
 
 let imagestoLoad = document.querySelectorAll("img[data-src]");
 

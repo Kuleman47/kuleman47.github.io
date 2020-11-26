@@ -133,19 +133,36 @@
     font-size: 18px;
 
 }
+
 .fivedaycast {
-    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    font-family: 'Bangers';
+    background-color: lightcyan; 
     margin: 50px;
+    font-size: 20px;
+    padding: 0px;
+    text-align: center;
 }
-
 .sodafivedaycast {
-    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    font-family: 'Bangers';
+    background-color: lightcyan; 
     margin: 50px;
+    font-size: 20px;
+    padding: 0px;
+    text-align: center;
 }
-
 .fishfivedaycast {
-    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    font-family: 'Bangers';
+    background-color: lightcyan; 
     margin: 50px;
+    font-size: 20px;
+    padding: 0px;
+    text-align: center;
 }
 .bus {
     float: right;

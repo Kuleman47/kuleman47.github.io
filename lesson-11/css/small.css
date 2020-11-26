@@ -74,6 +74,18 @@ ol {
     float: left;
     
 }
+.eventcss {
+    padding: 0;
+    margin-top: -45px;
+    font-size: 20px;
+}
+
+.prestonevents, .events, .sodaevent {
+    background-color: #F5EE9E;
+    text-align: center;
+    padding: 0;
+    margin: 50px;
+    }
 
 .logo {
     display: flex;
@@ -97,18 +109,18 @@ h2 {
     .hero {  
       display: flex;
       margin: 0 auto;
-      max-width: 800px;
-      height: auto;
-      
+      max-width: 100px;
+      height: auto;    
+      margin-left: -50px;  
     }
     .herodiv { 
         display: flex;
-        position: relative;       
+        position: relative;   
     }
     .weathersummary {
         position: absolute;
         top: 10px;
-        left: 100px;
+        left: 60px;
         font-size: 14px;
         background-color: #F5EE9E;
         border: none;
@@ -121,31 +133,13 @@ h2 {
     font-family: 'Courier New', Courier, monospace;
 }
 .fivedaycast {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    font-family: 'Bangers';
-    background-color: lightcyan; 
-    margin: 20px;
-    padding: 0px;
-    text-align: center;
+    display: none;
 }
 .sodafivedaycast {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    font-family: 'Bangers';
-    background-color: lightcyan; 
-    margin: 20px;
-    padding: 0px;
-    text-align: center;
+    display: none;
 }
 .fishfivedaycast {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    font-family: 'Bangers';
-    background-color: lightcyan; 
-    margin: 20px;
-    padding: 0px;
-    text-align: center;
+    display: none;
 }
   .article {
       background-color: #F5EE9E;
@@ -162,7 +156,7 @@ h2 {
     padding: 1em;
 }
 .buss {
-    max-width: 290px;
+    max-width: 180px;
     padding: 25px;
 }
 
@@ -244,11 +238,14 @@ p {
 }
 .email {
     display: flex;
+    position: relative;
     text-align: center;
+    margin: 0;
+    margin-left: -38px;
 }
 .emailp {
-    display: flex;
     text-align: center;
+    margin: 0;
 }
 .maps {
     display: none;
