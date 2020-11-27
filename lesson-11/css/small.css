@@ -124,9 +124,12 @@ h2 {
         font-size: 14px;
         background-color: #F5EE9E;
         border: none;
+        text-align: center;
         font-family: 'Permanent Marker';
     }
-
+#fivedaycast {
+    background-color: #F5EE9E;
+}
 #author {
     font-size: 16px;
     font-weight: bolder;

@@ -54,6 +54,8 @@
     display: flex;
 }
           .weathersummary {
+              display: flex;
+              display: inline;
             position: absolute;
             top: 30px;
             left: 170px;
@@ -132,6 +134,10 @@
 #degree {
     font-size: 18px;
 
+}
+
+#fivedaycast {
+    background-color: #F5EE9E;
 }
 
 .fivedaycast {
