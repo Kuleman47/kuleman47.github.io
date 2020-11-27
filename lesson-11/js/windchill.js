@@ -1,8 +1,6 @@
-
-
 function getwindchill() {
     let t = parseFloat(document.getElementById('t').textContent);
-    let s = parseFloat(document.getElementById("s").textContent);
+    let s = parseFloat(document.getElementById('s').textContent);
     var f = Windchill(t, s);
     
     }

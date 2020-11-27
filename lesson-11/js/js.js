@@ -6,11 +6,26 @@ const fishhavenURL = "https://api.openweathermap.org/data/2.5/weather?lat=42.038
 fetch(prestonURL)
   .then((response) => response.json())
   .then((jsObject) => {
-      console.log(jsObject);
-    document.getElementById('t').textContent = jsObject.main.temp;
-    document.getElementById('h').textContent = jsObject.main.humidity;
-    document.getElementById('s').textContent = jsObject.wind.speed;
+  console.log(jsObject);
+      const t = Math.round(jsObject.main.temp);
+      const s = Math.round(jsObject.wind.speed);
+    document.getElementById('t').textContent = t;
+    document.getElementById('h').textContent = Math.round(jsObject.main.humidity);
+    document.getElementById('s').textContent = s;
     document.getElementById('currently').textContent = jsObject.weather[0].description;
+
+
+    var windchill = 0;
+    var na = "N/A";
+if (t <= 50 && s >= 3) {
+  var b = 35.74 + (0.6215 * t) - 35.75 * s ** 0.16 + 0.4275 * t * s ** 0.16;
+  windchill = Math.round(b);
+  document.getElementById("WC").innerHTML = "Wind Chill: " + windchill;
+}
+else {
+  document.getElementById("WC").innerHTML = "Wind Chill: " + na;
+}
+
 
     const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png'; 
 const desc = jsObject.weather[0].description;
@@ -18,16 +33,29 @@ document.getElementById('imagesrc').textContent = imagesrc;
 document.getElementById('icon').setAttribute('src', imagesrc);  
 document.getElementById('icon').setAttribute('alt', desc);
 
-  });
+});
 
   fetch(sodaspringsURL)
   .then((response) => response.json())
   .then((jsObject) => {
       console.log(jsObject);
-    document.getElementById('st').textContent = jsObject.main.temp;
-    document.getElementById('sh').textContent = jsObject.main.humidity;
-    document.getElementById('ss').textContent = jsObject.wind.speed;
+const t = Math.round(jsObject.main.temp);
+const s = Math.round(jsObject.wind.speed);
+      document.getElementById('st').textContent = t;
+    document.getElementById('sh').textContent = Math.round(jsObject.main.humidity);
+    document.getElementById('ss').textContent = s;
     document.getElementById('scurrently').textContent = jsObject.weather[0].description;
+
+    var windchill = 0;
+    var na = "N/A";
+if (t <= 50 && s >= 3) {
+  var b = 35.74 + (0.6215 * t) - 35.75 * s ** 0.16 + 0.4275 * t * s ** 0.16;
+  windchill = Math.round(b);
+  document.getElementById("WC").innerHTML = "Wind Chill: " + windchill;
+}
+else {
+  document.getElementById("WC").innerHTML = "Wind Chill: " + na;
+}
 
     const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png'; 
 const desc = jsObject.weather[0].description;
@@ -35,16 +63,35 @@ document.getElementById('imagesrc').textContent = imagesrc;
 document.getElementById('icon').setAttribute('src', imagesrc);  
 document.getElementById('icon').setAttribute('alt', desc);
 
-  });
+
+
+
+});
 
   fetch(fishhavenURL)
   .then((response) => response.json())
   .then((jsObject) => {
       console.log(jsObject);
-    document.getElementById('ft').textContent = jsObject.main.temp;
-    document.getElementById('fh').textContent = jsObject.main.humidity;
-    document.getElementById('fs').textContent = jsObject.wind.speed;
+
+    const t = Math.round(jsObject.main.temp)
+    const s = Math.round(jsObject.wind.speed)
+      document.getElementById('ft').textContent = t;
+    document.getElementById('fh').textContent = Math.round(jsObject.main.humidity);
+    document.getElementById('fs').textContent = s;
     document.getElementById('fcurrently').textContent = jsObject.weather[0].description;
+
+    var windchill = 0;
+    var na = "N/A";
+if (t <= 50 && s >= 3) {
+  var b = 35.74 + (0.6215 * t) - 35.75 * s ** 0.16 + 0.4275 * t * s ** 0.16;
+  windchill = Math.round(b);
+  document.getElementById("WC").innerHTML = "Wind Chill: " + windchill;
+}
+else {
+  document.getElementById("WC").innerHTML = "Wind Chill: " + na;
+}
+
+
 
     const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png'; 
 const desc = jsObject.weather[0].description;
@@ -79,7 +126,7 @@ fetch(apiURL)
     days.textContent = weekdays[date.getDay()];
     imagine.setAttribute('src', 'https://openweathermap.org/img/w/' + forecast[i].weather[0].icon + '.png');
     imagine.setAttribute('alt', forecast[i].weather[0].description);
-    temps.textContent = forecast[i].main.temp;
+    temps.textContent = Math.round(forecast[i].main.temp);
 
     card.appendChild(days);
     card.appendChild(imagine);
@@ -109,7 +156,7 @@ fetch(sodaspringsapiURL)
     days.textContent = weekdays[date.getDay()];
     imagine.setAttribute('src', 'https://openweathermap.org/img/w/' + sodaforecast[i].weather[0].icon + '.png');
     imagine.setAttribute('alt', sodaforecast[i].weather[0].description);
-    temps.textContent = sodaforecast[i].main.temp;
+    temps.textContent = Math.round(sodaforecast[i].main.temp);
 
     card.appendChild(days);
     card.appendChild(imagine);
@@ -140,7 +187,7 @@ fetch(fishhavenapiURL)
     days.textContent = weekdays[date.getDay()];
     imagine.setAttribute('src', 'https://openweathermap.org/img/w/' + forecast[i].weather[0].icon + '.png');
     imagine.setAttribute('alt', forecast[i].weather[0].description);
-    temps.textContent = forecast[i].main.temp;
+    temps.textContent = Math.round(forecast[i].main.temp);
 
     card.appendChild(days);
     card.appendChild(imagine);
