@@ -27,7 +27,8 @@ fetch(apiURL)
     console.log(forecast);
 
   const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    for (let i = 0; i < forecast.length; i++ ) {
+ 
+  for (let i = 0; i < forecast.length; i++ ) {
         
     const date = new Date(forecast[i].dt_txt);
     let card = document.createElement('table');

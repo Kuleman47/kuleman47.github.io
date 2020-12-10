@@ -1,0 +1,62 @@
+{
+"vehicles" : [ 
+{
+    "vehicle" : "Honda Metro Scooter",
+    "person" : "1",
+    "reservationhalfday" : "20$",
+    "reservationfullday" : "30$",
+    "walkinhalfday" : "25$",
+    "walkinfullday" : "35$",
+    "image" : "oneseatscoot.jpg"
+},
+{
+    "vehicle" : "Honda Dio Scooter",
+    "person" : "2",
+    "reservationhalfday" : "30$",
+    "reservationfullday" : "40$",
+    "walkinhalfday" : "35$",
+    "walkinfullday" : "45$",
+    "image" : "2seatscooter.jpg"
+},
+
+{
+   "vehicle" : "Honda PCX150 Scooter",
+    "person" : "2",
+    "reservationhalfday" : "40$",
+    "reservationfullday" : "50$",
+    "walkinhalfday" : "45$",
+    "walkinfullday" : "55$",
+    "image" : "better2seatscooter.jpg"
+},
+
+{
+    "vehicle" : "Honda Pioneer ATV",
+    "person" : "4",
+    "reservationhalfday" : "50$",
+    "reservationfullday" : "70$",
+    "walkinhalfday" : "60$",
+    "walkinfullday" : "80$",
+    "image" : "atv.jpg"
+},
+
+{
+    "vehicle" : "Jeep Wrangler - 4 door",
+    "person" : "5",
+    "reservationhalfday" : "70$",
+    "reservationfullday" : "100$",
+    "walkinhalfday" : "85$",
+    "walkinfullday" : "125$",
+    "image" : "2doorjeep.jpg"
+},
+
+{
+    "vehicle" : "Jeep Wrangler - 2 door",
+    "person" : "4",
+    "reservationhalfday" : "60$",
+    "reservationfullday" : "85$",
+    "walkinhalfday" : "70$",
+    "walkinfullday" : "90$",
+    "image" : "4doorjeep.jpg"
+}
+]
+}
