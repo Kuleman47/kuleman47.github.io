@@ -26,7 +26,7 @@ p {
     text-align: center;
     display: flex;
     justify-content: center;
-    margin: 50px;
+    margin-right: 50%;
     background-color: #ADA296;
     width: 80%;
     padding: 10px;
@@ -46,16 +46,22 @@ li {
     text-align: center;
     background-color: #ADA296;
     margin: 50px;
+    padding: 10px;
 }
 .attractions {
     text-align: center;
     background-color: #ADA296;
     margin: 50px;
+    padding: 10px;
+}
+iframe {
+    width: 230px;
 }
 .history {
     margin: 50px;
     text-align: center;
     background-color: #ADA296;
+    padding: 10px;
 }
 .hero {
     display: none;
@@ -98,8 +104,7 @@ h2 {
 }
 .reservh2 {
     text-align: center;
-    margin: 100px;
-    margin-bottom: 30px;
+    margin: 50px;
 }
 .informationandservices {
     background-color: #ADA296;

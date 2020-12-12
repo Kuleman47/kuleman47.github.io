@@ -30,12 +30,22 @@
 .rentalsummarydiv img {
     grid-column: 2/2;
 }
+iframe {
+    display: block;
+    padding: 25px;
+    width: 600px;
+}
 .infojpeg {
     display: block;
     float: right;
-    max-width: 250px;
-    padding: 100px;
-    padding-bottom: 190px;
+    max-width: 250px;   
+    padding-right: 150px;
+    padding-left: 150px;
+}
+.reservh2 {
+    margin: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .homeres h2 {
     background-color: #452103;
