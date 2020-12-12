@@ -53,3 +53,32 @@ function toggleMenu() {
     .getElementsByClassName("navigation")[0]
     .classList.toggle("responsive");
 }
+
+const APIWeather = 'https://api.openweathermap.org/data/2.5/onecall?lat=20.4230&lon=-86.9223&exclude=hourly,daily&appid=83f34cca04973e1329ea402e3d5dda64'
+
+fetch(APIWeather)
+.then((response) => response.json())
+.then((jsObject) => {
+    console.log(jsObject);
+
+    const current = jsObject['current']
+    let section = document.createElement('section');
+    let temperature = document.createElement('p');
+    let humidity = document.createElement('p');
+    let description = document.createElement('p');
+    let feelslike = document.createElement('p');
+
+    temperature.textContent = "Current Temperature:  " + current.temp;
+    humidity.textContent = "Current Humidity:  " + current.humidity;
+    feelslike.textContent = "Currently Feels Like:  " + current.feels_like;
+    description.textContent = "Current Description of Weather:  " + current.weather[0].description;
+
+    section.appendChild(temperature);
+    section.appendChild(humidity);
+    section.appendChild(feelslike);
+    section.appendChild(description);
+
+document.querySelector('div.weather').appendChild(section);
+
+
+});

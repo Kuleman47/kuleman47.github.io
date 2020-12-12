@@ -22,6 +22,18 @@ p {
     background-color: #ADA296;
     font-family: 'Piedra';
 }
+.weather {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    background-color: #ADA296;
+    width: 80%;
+    padding: 10px;
+}
+.header2 {
+    margin: 50px;
+}
 .sunset{
     float: right;
     padding: 10px;
