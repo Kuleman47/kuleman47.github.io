@@ -1,6 +1,9 @@
 body {
     background-color: #452103;
 }
+.active {
+    background-color: black;
+}
 header {
     color: white;
     display: flex;
